@@ -10,14 +10,9 @@ import UIKit
 import SpriteKit
 import SceneKit
 
-// see http://stackoverflow.com/questions/24127587/how-do-i-declare-an-array-of-weak-references-in-swift
-class Weak<T: AnyObject> {
-	weak var value : T?
-	init (value: T) {
-		self.value = value
-	}
-}
 
+// create a SCNScene with a cube
+// create a SKScene, and use it as diffuse content for the cube
 class ViewController: UIViewController {
 
 	@IBOutlet weak var scnView: SCNView!
@@ -25,11 +20,10 @@ class ViewController: UIViewController {
 	@IBAction func buttonPressed(_ sender: AnyObject) {
 		// on button pressed, create a new SKScene
 		// and use it as the material for the cube instead of the previous one
-		createScene()
+		self.dismiss(animated: true, completion: nil)
 	}
 
-	var scenes = [Weak<SKScene>]()
-	var cubeNode: SCNNode!
+	weak var delegate: ViewControllerDelegate?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -43,12 +37,11 @@ class ViewController: UIViewController {
 		cameraNode.position = SCNVector3(x: 0, y: 0, z: 25)
 		scnScene.rootNode.addChildNode(cameraNode)
 
-		cubeNode = SCNNode()
+		let cubeNode = SCNNode()
 		cubeNode.geometry = SCNBox(width: 5, height: 5, length: 5, chamferRadius: 0)
 		scnScene.rootNode.addChildNode(cubeNode)
-	}
 
-	func createScene() {
+		// setup SKScene scene
 		let skScene = SKScene()
 		skScene.backgroundColor = UIColor.black
 		skScene.size = CGSize(width: 100, height: 100)
@@ -61,12 +54,10 @@ class ViewController: UIViewController {
 
 		let material = cubeNode.geometry!.firstMaterial!
 		material.diffuse.contents = skScene
-
-		scenes.append(Weak<SKScene>(value: skScene))
-		print("sk scenes alive: \(countScenesAlive())")
+		delegate?.register(scene: skScene)
 	}
+}
 
-	func countScenesAlive() -> Int {
-		return scenes.filter { return $0.value != nil }.count
-	}
+protocol ViewControllerDelegate: class {
+	func register(scene: SKScene)
 }

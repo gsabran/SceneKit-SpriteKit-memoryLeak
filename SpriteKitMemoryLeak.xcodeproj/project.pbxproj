@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6710741D93C7CF00B48268 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6710731D93C7CF00B48268 /* HomeController.swift */; };
 		6FD10D0E1D93B65800902812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD10D0D1D93B65800902812 /* AppDelegate.swift */; };
 		6FD10D101D93B65800902812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD10D0F1D93B65800902812 /* ViewController.swift */; };
 		6FD10D131D93B65800902812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD10D111D93B65800902812 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F6710731D93C7CF00B48268 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		6FD10D0A1D93B65800902812 /* SpriteKitMemoryLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitMemoryLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD10D0D1D93B65800902812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD10D0F1D93B65800902812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				6FD10D0D1D93B65800902812 /* AppDelegate.swift */,
 				6FD10D0F1D93B65800902812 /* ViewController.swift */,
+				6F6710731D93C7CF00B48268 /* HomeController.swift */,
 				6FD10D111D93B65800902812 /* Main.storyboard */,
 				6FD10D141D93B65800902812 /* Assets.xcassets */,
 				6FD10D161D93B65800902812 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				6FD10D101D93B65800902812 /* ViewController.swift in Sources */,
 				6FD10D0E1D93B65800902812 /* AppDelegate.swift in Sources */,
+				6F6710741D93C7CF00B48268 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +518,7 @@
 				6FD10D341D93B65800902812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FD10D351D93B65800902812 /* Build configuration list for PBXNativeTarget "SpriteKitMemoryLeakTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				6FD10D371D93B65800902812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FD10D381D93B65800902812 /* Build configuration list for PBXNativeTarget "SpriteKitMemoryLeakUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				6FD10D3A1D93B65800902812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
