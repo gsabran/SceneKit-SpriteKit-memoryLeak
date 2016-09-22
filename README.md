@@ -20,3 +20,5 @@ Test:
 
 Notes:
 - on iOS 10, SceneKit fails to render a node that uses a SKScene with openGL, so when you set things to use openGL, you'll just see a white page. This is a seperate issue.
+
+License: MIT
