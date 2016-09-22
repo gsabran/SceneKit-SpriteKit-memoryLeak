@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					6FD10D091D93B65800902812 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = V25XX8Q7L2;
+						DevelopmentTeam = GP78T2GNXD;
 						ProvisioningStyle = Automatic;
 					};
 					6FD10D1D1D93B65800902812 = {
@@ -415,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V25XX8Q7L2;
+				DEVELOPMENT_TEAM = GP78T2GNXD;
 				INFOPLIST_FILE = SpriteKitMemoryLeak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.papero.360PlayerSwift.SpriteKitMemoryLeak;
@@ -428,7 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V25XX8Q7L2;
+				DEVELOPMENT_TEAM = GP78T2GNXD;
 				INFOPLIST_FILE = SpriteKitMemoryLeak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.papero.360PlayerSwift.SpriteKitMemoryLeak;
